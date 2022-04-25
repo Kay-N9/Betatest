@@ -1,0 +1,179 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{   
+    background: url(../img/Acceuil3.jpg) no-repeat fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position:top;
+  
+}
+
+h2{    
+    /* border: 4px solid black; */
+}
+
+.flex{  
+    display: flex;
+}
+
+.center{    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{    
+    flex-direction: column;
+}
+
+img{    
+    max-width: 100%
+}
+
+.w15{ 
+    width: 20%;
+    
+    justify-content: space-between;
+}
+
+#acceuil{    
+    position: relative;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+}
+
+#header{    
+    width: 85%;
+    margin: 20px 49px;
+    justify-content: space-between;
+}
+
+
+li{ 
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+nav ul li a {
+    color:white;
+    font-weight: 100;
+    padding:1rem;
+    text-decoration:none;
+}
+
+nav ul li ul,
+ul,#compte { 
+    display:none; 
+} 
+
+
+#compte:checked + ul {
+    list-style: none;
+    display:list-item;
+    position:absolute;
+    margin-top:5px;
+    margin-left:-10px;
+}
+
+nav a:hover{
+    color: #538D22;
+}
+
+/******************************************** TITRE ******************************************************/
+
+.container{ 
+    /* border: solid black 3px; */
+    height: 25rem;
+    width: 40rem;
+    align-items: center;
+    margin-top: 10rem;
+    justify-content: space-between;
+}
+
+h1{ 
+
+    font-size: 96px;
+    line-height: 113px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: -2px;
+}
+
+.categorie{ 
+    width: 30rem;
+}
+
+.categorie a{   
+    font-size: 32px;
+    line-height: 37px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fem,
+.hom{ 
+    position: relative;
+}
+
+.fem a:before,
+.hom a:before{
+    content: "";
+    position: absolute;
+    width: 115%;
+    height: 3px;
+    bottom: -2px;
+    left: -13px;
+    background: #538D22;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+ 
+
+
+
+  @media screen and (max-width: 990px){
+    .container{
+        height: 15rem;
+        left: 6rem;
+        top: 2rem;
+    }
+      h1{
+          font-size: 60px;
+      }
+      h2{
+          font-size: 30px;
+      }
+  }
+
+  @media screen  and (max-width: 768px){
+      #header{
+          width: 100%;
+      }
+      .container{
+          height: 15rem;
+          left: 6rem;
+          top: 5rem;
+      }
+      h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 30px;
+    }
+  }
+
+

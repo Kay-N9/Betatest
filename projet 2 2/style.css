@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    /* border:2px red solid */
+}
+
+ body{
+     font-family: roboto;
+ }
+
+/* NAV */
+
+
+header{
+    background: #538D22;
+    
+} 
+
+h2{
+    color: whit;
+    padding-left: 50px;
+    padding-top: 50px;
+} 
+
+.commande img{
+    width: 347px;
+    height: 520px;
+    margin-right: 200px;  
+} 
+
+.commande{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 50px;
+}
+
+.thibag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 520px;
+}
+/* section{
+    width: 90vh;
+} */
+
+.produit{
+    width:500px;
+    display:flex;
+    justify-content:space-between; 
+    margin-top:50px; 
+    margin-left:220px;
+     
+
+
+    
+} 
+
+.produit div{
+    width:100px;
+    height: 100px;
+} 
+.produit img{
+    width:100px;
+    height:100px; 
+
+}
+
+.lol h2{
+    color: #538D22;
+} 
+
+.droite{
+    display:flex; 
+    justify-content:flex-end; 
+    gap: 40px;
+    padding-right: 20px;
+    
+    
+
+}
+
+.droite img{
+    width: 41px;
+    
+}
+
+.gauche h2{
+    color: white;
+    font-family: roboto;
+    font-style: italic;
+    font-size: 50px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    
+} 
+
+section h2{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+}
+
+.fiak{
+    /* background: #538D22 ; */
+    display: flex;
+    justify-content: center;
+}
+
+.stephiak{
+    padding-top: 20px;
+    
+}
+
+input{
+    color: white;
+    background: #538D22;
+    padding-left: 15px;
+    padding-right: 10px;
+    width: 350px;
+    font-family: roboto;
+    font-weight: 700;
+    height: 50px;
+    font-size: 20px;
+}
+
+.prout{
+    padding-left: 140px;
+    color: #538D22;
+    font-family: roboto;
+    
+}
+
+.thibag p{
+    font-family: roboto;
+    font-weight: 800;
+    text-align: center;
+}

@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+a{
+    text-decoration: none;
+}
+
+body{   
+   background:#FEFAE0;
+   position: relative;
+   font-family: 'Roboto';
+   position: relative;
+}
+
+.flex{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{    
+    display: flex;
+    flex-direction: column;
+}
+
+h1{ 
+    font-weight: 900;
+    font-size: clamp(10px, 10vw, 40px);
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    color: #538D22;
+    text-transform:uppercase;
+    font-style: italic;
+}
+
+h2{
+    font-size:xx-large;
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: clamp(9px, 9vw, 40px);
+    }
+
+    h2{
+        font-size:x-large;
+    }
+
+}
+/***************************************** GRID ************************************************/
+
+.w10{
+    width: 10%;
+}
+
+.w20{
+    width: 20%;
+}
+
+.w40{
+    width: 40%;
+}
+
+.p10{
+    padding: 10px;
+}
+
+.p30{ 
+    padding: 9rem 0;
+}
+
+.m5{
+    margin: 5px 0;
+}
+
+.mb5{
+    margin-bottom: 5px;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.mb30{
+    margin-bottom: 2rem;
+
+}
+
+.mb40{
+    margin-bottom: 3rem;
+
+}
+.mb32{
+    margin-bottom: 5rem;
+
+}
+
+.mb39{
+    margin-bottom: 15rem;
+
+}
+
+@media screen and (max-width: 1800px) {
+    .w20 {
+        width: 23%;
+    }
+}
+
+@media screen and (max-width: 1284px) {
+    .w10 {
+        width: 15%;
+    }
+
+    .w20 {
+        width: 35%;
+    }
+    .w40 {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .w20 {
+        width: 37%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .w10 {
+        width: 18%;
+    }
+
+    .w20 {
+        width: 49%;
+    }
+
+    .w40{
+        width: 86%;
+    }
+
+}
+@media screen and (max-height: 768px){
+    .w20{
+        width: 27%;
+    }
+
+    .w40{
+        width: 46%;
+    }
+}
+
+@media screen and (max-height: 538px){
+    .w20{
+        width: 46%;
+    }
+
+    .w40{
+        width: 80%;
+    }
+}
+
+/***************************************** BOUTON ************************************************/
+
+#btn {
+    letter-spacing: 0.15em; 
+    color: #FEFAE0;
+    padding: 16px 30px;
+    border-radius: 5px;
+    background-color: #538D22;
+    text-transform: uppercase;
+}
+
+#btn:hover{
+    background-color: #68a535;
+    
+}
+
+.btn,
+.btn:hover,
+.btn:active,
+.btn:visited {
+    color: #000000;
+    text-decoration: none;
+    padding:  9px 12.5px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid rgba(122, 119, 119, 0.6);  
+}
+
+label{
+    color: #538D22;
+}
+
+a.btn,
+label.btn {
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #538D22;
+    color: white;
+}
+
+@media screen and (min-width: 768px){
+    #btn{
+        padding: 15px 15px;
+    }
+}
+
+
+/***************************************************** HEADER *******************************/
+
+header{
+    position: fixed;
+    top: 0;
+    width: 98vw;
+}
+
+nav ul li, .taille ul, #compte ul{  
+    list-style: none;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    padding:10px;
+    text-decoration:none;
+    color: black;
+}
+
+nav ul li ul { 
+    display:none; 
+} 
+
+.selec a:hover{    
+    color: #538D22;
+}
+
+
+.selec{
+    position: relative;
+}
+
+.selec a::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    top: 100%;
+    left: 10%;
+    background: #538D22;
+    visibility: hidden;
+}
+
+.selec a:hover::before{
+    visibility:visible;
+}
+
+
+nav a:hover{
+    color: #538D22;
+}
+
+
+#compte{
+    display: none;
+}
+
+#compte:checked + ul {
+    list-style: none;
+    display:list-item;
+    position:absolute;
+    margin-top:5px;
+    margin-left:-10px;
+}
+
+@media screen and (min-width: 1600px) {
+
+    header{
+        width: 100%;
+    }
+}
+
+
+
+/******************************************************* CHOIX *********************************/
+
+
+.taille input[type=radio],.coe input[type=checkbox]{
+    display: none;
+}
+
+.taille input[type=radio]:checked + label.btn {
+    background-color: #538D22;
+    color: #FEFAE0;
+}
+
+
+
+.coe input[type=checkbox]:checked + label{
+    background: url(../header/heart-1.png)no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.coe label{
+    background: url(../header/heart-2.png)no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 1.25rem;
+    margin: 1rem;
+    border: none;
+}
+
+
+/************************************************ MAIN ***********************************************/
+
+.grid {  
+    display: grid;
+    grid-gap: 3%;  
+    grid-template-columns: 1fr 1fr; 
+
+}
+
+.mme{
+    width: 100%;
+    height: 75vw;
+    background: url(../imgF/P81\(3\).jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#imgplus{
+    grid-gap: 0.1%; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    height: 49vw;
+}
+
+.mmi{
+    background: url(../imgF/P8-1.jpg)no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+.mmi1{
+    background: url(../imgF/P8-2.jpg)no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+.mmi2{
+    background: url(../imgF/P8-3.jpg)no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+.rel{
+    position: relative;
+    top: 40vh;
+}
+
+#stik{
+    position: sticky;
+    top: 5rem;
+    min-height: calc(100vh - 100px);
+}
+
+main a{
+    color: #000000;
+}
+
+
+
+@media screen and (max-width: 1284px) {
+
+    .rel{
+        top: 30vh;
+    }
+    .mme{
+        height: 100vh;
+    }
+    
+}
+
+
+@media screen and (max-width: 992px) {
+
+
+    .rel {
+        top: 20vh;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    .mme {
+        height: 97vw;
+    }
+
+
+    #stik{
+        top: 7rem;
+        min-height: calc(87vh - 100px);
+    }
+}
+
+
+@media screen and (max-height: 768px){
+
+    #stik{
+        min-height: calc(130vh - 100px);
+    }
+
+
+}
+
+/******************************************** PRODUIT **********************************************/
+
+.prix p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.taille label,#guide a{
+    font-weight: 500;
+    color: #000000;
+}
+
+
+.rel a{ 
+    font-weight: 400;
+    color: #000000;
+    border-left: 1px solid #000000;
+    padding-left: 2rem;
+}
+
+.rel :first-child{
+    border-left: none;
+}
+
+/******************************************** DETAIL *************************************************/
+
+.lepd{
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #ECE7CA;
+}
+
+.ig{
+    align-self: center;
+}
+
+@media screen and (max-width: 1284px) {
+    .ig {
+        align-self: start;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .descrip{
+       padding-left: 20px;
+       width: 20%;
+    }
+    .og {
+        width:30%;
+
+    }
+}
+
+/************************************************ RECOMMANDATION **************************************/
+
+.recommandation{
+
+    text-align: center;
+}
+
+.KU{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1284px){
+    .card img{
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-height: 768px){
+    .card img{
+        width: 95%;
+    }
+
+}
+/******************************************* CHEMIN ****************************************/
+
+.chemin{
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 80vh;
+}
+
+.chemin a{
+    font-size: 0.9rem;
+    font-weight: 450;
+}
+
+@media screen and (max-width: 1284px){
+    .chemin{
+        padding: 0 40vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .chemin {
+    padding: 0px 14rem;
+    }
+}
+
+/****************************************************** FOOTER *************************************/
+.end{   
+    height: 12rem;
+    background: #538D22;
+    padding:0 40px;
+    padding-top: 1rem;
+    justify-content: space-around;
+}
+
+.end > p{
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+}
+
+.end a,
+h4{ 
+    color: white;
+}
+
+.endcont{
+    /* border: 4px solid black; */
+    width: 90%;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.navy{  
+    gap: 10px;
+}
+
+h4{ 
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+

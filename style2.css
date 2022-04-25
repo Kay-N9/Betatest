@@ -1,0 +1,266 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section,
+div{    
+    /* border: 2px solid black; */
+}
+
+
+nav{    
+    /* border: 3px solid red; */
+}
+
+a{
+    text-decoration: none;
+}
+
+body{   
+   background:#FEFAE0;
+   position: relative;
+   font-family: 'Roboto';
+}
+
+.flex{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{    
+    display: flex;
+    flex-direction: column;
+}
+
+.grid{  
+    display: grid;
+    gap: 36.86px;
+}
+
+img{    
+    display: block;
+    max-width: 100%
+}
+
+
+/* HEADER */
+
+.header{    
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 126px;
+}
+.head{  
+    height: min(60px, 90%);
+    background: #538D22;
+}
+
+.head-con{  
+    
+    width: 100%;
+    height: 30px;
+    margin: 20px 39px 23px;
+}
+
+.acceuilG{   
+    width: 318px;
+    height: 100px;
+}
+
+.acceuilG a{ 
+    color: white;
+    text-align: center;
+}
+
+.selecG a{  
+    padding: 20px 10px;
+}
+
+
+.selec a:hover{    
+    background-color: #FEFAE0;
+    color: #538D22;
+}
+
+.selec a:focus-within{    
+    background-color: #FEFAE0;
+    color: #538D22;
+}
+
+h3{ 
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.icons{ 
+    width: 190px;
+}
+
+li{ 
+    list-style: none; 
+}
+
+nav ul li{  
+    list-style: none;
+    float: left;
+}
+
+nav ul li a {
+    padding:10px;
+    font-size:20px;
+}
+.menu{  
+    position: relative;
+}
+
+.menu a:before{  
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 1.5px;
+    bottom: -2px;
+    left: 72px;
+    background: #538D22;
+    visibility: hidden;
+}
+.me4 a:before{  
+    width: 60%;
+}
+
+.menu a:hover::before {
+    visibility: visible;
+}
+nav ul li ul { 
+    display:none; 
+} 
+nav ul li:hover ul { 
+    z-index:99999;
+    display:list-item;
+    position:absolute;
+    margin-top:5px;
+    margin-left:-10px;
+}
+nav ul li:hover ul li{
+    float:none;
+}
+
+.head1{   
+    height: 50px;
+    background: white;
+}
+
+.h-con{  
+    font-size: 39px;
+    font-weight: normal;
+    height: 37px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.h-con a{  
+    color:#538D22;
+    padding:  0 90px;
+}
+
+#central{   
+    width: 100%;
+}
+
+/* Produit */
+
+
+.product{   
+    grid-template-columns: 1fr 1fr ;
+    margin: 0 20px;
+}
+
+.photo{ 
+    grid-template-columns:  80px  1fr;
+}
+
+.miniphoto{ 
+    gap: 20px;
+}
+
+/* Description */
+
+.description p,
+.description a{   
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+h1{ 
+    font-size: 35px;
+    margin-bottom: 19px;
+}
+
+span{   
+    font-weight: 900;
+    font-size: 30px;
+    color: #538D22;
+}
+
+.prix{  
+    margin-bottom: 142px;
+}
+
+.colo{  
+    /* border: 4px solid black; */
+    width: 178px;
+    margin-bottom: 71px;
+}
+
+.tail{  
+    width: 455px;
+    margin-bottom: 12px;
+}
+
+.tail a{    
+    text-decoration:underline;
+}
+
+.choix{ 
+    border: 1px solid black;
+    background: rgba(185, 174, 174, 0.815);
+    width: 392px;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.panier{    
+    width: 434px;
+}
+.button{    
+    width: 300px;
+    height: 61px;
+    font-size: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    border: none;
+    background: #538D22;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.heart{ 
+    width: 58px;
+    height: 58px;
+    background: url(img/ADev/icon/heart\ 2.png);
+}
+.heart:hover{   
+    background: url(img/ADev/icon/heart\ 1.png);
+}
+
+.mesures{   
+    width: 300px
+}

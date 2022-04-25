@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+body{   
+   background:#FEFAE0;
+   position: relative;
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+}
+
+h1{
+    font-size: 96px;
+    letter-spacing: -0.05em;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    color: #538D22;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.20);
+}
+
+h2, h3{
+    font-weight: normal;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#origine h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+h4{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+.flex{
+    display: flex;
+    
+}
+
+.center{    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{    
+    flex-direction: column;
+}
+
+p{
+    font-size: 28px;
+    font-weight: normal;
+    text-transform: initial;
+}
+
+
+/**********************************************  GRID ******************************************/
+
+.p20{
+    padding: 1rem;
+}
+
+.p40{
+    padding-top: 5rem;
+}
+
+.mb20{
+    margin-bottom: 2rem;
+}
+
+.mb30{
+    margin-bottom: 5rem;
+}
+
+.mb39{
+    margin-bottom: 10rem;
+}
+
+.mb40{
+    margin-bottom: 15rem;
+}
+/************************************************* HEADER ******************************************/
+
+header{
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 9rem;
+    
+}
+
+header a{
+    z-index: 8885;
+    position: fixed;
+    top: 0;
+}
+
+header div{
+    width: 50px;
+    height: 50px;
+    background-color: #538D22;
+    
+}
+header h2{
+    padding: 4rem 7rem; 
+}
+
+/************************************************** VIDEO **********************************************/
+
+.vide{
+    position: relative;
+    height: 50vw;
+}
+video{
+    position: absolute;
+    left: 5.6%;
+    height: 100%;
+}
+
+/************************************* CONCEPT ***********************************************/
+main{
+    max-width: 1628px;
+    margin: 0 auto;
+}
+
+#concept{
+    margin: 0 35vh;
+}
+
+.mar{
+    margin-left: -50%;
+}
+
+#concept article:nth-child(1n),
+.intro{
+    text-align: center;
+}
+
+#concept article:nth-child(2n){
+    text-align: end;
+}
+
+.droite{
+    text-align: start;
+    
+}
+
+@media screen and (max-width: 1440px) {
+    #concept{
+        margin: 0 25vh;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #concept{
+        margin: 0 10vh;
+    }
+}
+
+/*************************************** ORIGINES ***********************************************/
+#origine,.cap{
+    position: relative;
+}
+
+#origine .cap:nth-child(odd){
+    justify-content: flex-end;
+}
+
+.legende,
+.citation{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+}
+
+.legende{
+    font-weight: bold;
+    text-transform:capitalize;
+    font-size: 20px;
+    align-self: flex-end;   
+    position: absolute;
+    top: 73%;
+    left: 1%; 
+}
+
+.citation{
+    font-style: italic;
+}
+
+.secondaire{
+    position: relative;
+    left: 55%;
+    bottom: 15%;
+}
+
+#bo .legende{
+    left: 77%;
+}
+
+#bo .principale{
+    position: relative;
+    left: 23%;
+}
+
+#bo .secondaire{
+    left: -15%;
+}
+#ni .secondaire{
+    left: 40%;
+}
+
+.photo img{
+    z-index: 0;
+    transition: all 1s ease;
+}
+
+.photo img:hover{
+    z-index: 25;
+    filter: drop-shadow(11px 13px 12px rgba(0, 0, 0, 0.25));
+    transition-delay: 1.05;
+}
+
+
+@media screen and (max-width: 1440px) {
+    main{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .legende{
+        left: -3%;
+    }
+
+    #bo .principale {
+        left: 15%;
+    }
+
+    #bo .secondaire {
+        left: -33%;
+    }
+
+    #bo .legende {
+        left: 75%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    main{
+        max-width: 990px;
+        margin: 0 auto;
+    }
+    .secondaire {
+        left: 45%;
+    }
+    .legende {
+        left: 70%;
+    }
+
+    #bo .principale {
+        left: -1%;
+    }
+
+    #bo .legende {
+    left: 1%;
+    text-align: start;
+}
+}
+/***************************************** LETOUT ***************************************************/
+
+.letout {
+    align-items: center;
+    text-align:center ;
+}
+
+
+.fi{
+    height: 100vh;
+    width: 100%;
+    background: url(../img/Team.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: all 0.5s ease;
+}
+
+.fi:hover{
+    height: 100vh;
+    background: url(../img/Team1.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition-delay: 0.05;
+}
+
+/************************************************* FOOTER ********************************************/
+
+footer{
+    background: #538D22;
+}
